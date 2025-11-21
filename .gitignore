@@ -1,0 +1,7 @@
+venv/
+logs/
+__pycache__/
+artifacts/
+__pycache__
+artifacts
+images/
