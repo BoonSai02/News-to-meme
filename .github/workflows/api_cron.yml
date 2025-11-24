@@ -1,0 +1,16 @@
+name: Trigger API Cron Job
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'  # Runs every 10 minutes
+  workflow_dispatch:      # Allows manual triggering from GitHub UI
+
+jobs:
+  trigger-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call API Endpoint
+        run: |
+          echo "Triggering API endpoint..."
+          curl -X GET "https://news-to-meme.onrender.com/ai-memes"
+          echo "API triggered."
