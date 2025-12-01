@@ -1,8 +1,8 @@
 name: Trigger API Cron Job
 
 on:
-  # schedule:
-    # - cron: '*/10 * * * *'  # Runs every 10 minutes
+  schedule:
+    - cron: '*/5 * * * *'  # Runs every 5 minutes
   workflow_dispatch:      # Allows manual triggering from GitHub UI
 
 jobs:
