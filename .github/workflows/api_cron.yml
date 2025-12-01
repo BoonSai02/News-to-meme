@@ -12,5 +12,5 @@ jobs:
       - name: Call API Endpoint
         run: |
           echo "Triggering API endpoint..."
-          curl -X GET "https://news-to-meme.onrender.com/ai-memes"
+          curl -X GET "https://news-to-meme-1.onrender.com/ai-memes"
           echo "API triggered."
